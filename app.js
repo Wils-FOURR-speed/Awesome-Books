@@ -1,4 +1,4 @@
-let bookstore = [];
+const bookstore = [];
 let id = 0;
 
 const form = document.getElementById('form');
@@ -12,7 +12,7 @@ function callbackFunction(event) {
     formDataObj[key] = value;
   });
   id += 1;
-  formDataObj = { ...formDataObj, id: id };
+  formDataObj = { ...formDataObj, id };
   bookstore.push(formDataObj);
   const storedBook = JSON.stringify(bookstore);
   localStorage.setItem('books', storedBook);
