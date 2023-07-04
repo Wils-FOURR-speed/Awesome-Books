@@ -50,8 +50,6 @@ function removeBook(index) {
 
 
 window.onload = function () {
-  console.log(books);
-
   if (!books || books.length === 0) {
     return 0;
   }
