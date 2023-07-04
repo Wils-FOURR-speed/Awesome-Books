@@ -2,7 +2,6 @@ const bookstore = [];
 let id = 0;
 
 const form = document.getElementById('form');
-form.addEventListener('submit', callbackFunction);
 
 function callbackFunction(event) {
   event.preventDefault();
@@ -18,6 +17,9 @@ function callbackFunction(event) {
   localStorage.setItem('books', storedBook);
   displayData();
 }
+
+form.addEventListener('submit', callbackFunction);
+
 function displayData() {
   books = JSON.parse(localStorage.getItem('books'));
   const bookSection = document.getElementById('books');
