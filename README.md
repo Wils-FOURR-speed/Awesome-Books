@@ -21,8 +21,9 @@
     -   [Install](#install)
     -   [Usage](#usage)
     -   [Run tests](#Run-tests)
--   [👥 Authors](#authors)
 -   [🎥 Live Demo](#live-demo)
+-   [🎥 Future Feature](#future-feature)
+-   [👥 Authors](#authors)
 -   [🎥 Project Presentation](#Project-presentation)
 -   [🤝 Contributing](#contributing)
 -   [⭐️ Show your support](#support)
@@ -128,6 +129,19 @@ npx stylelint "**/*.{css,scss}"
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+## 🎥 Live Demo <a name="live-demo"></a>
+
+-   Live Demo: [@LiveDemo](https://wils-fourr-speed.github.io/Awesome-Books/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🎥 Future Feature <a name="future feature"></a>
+
+-   In future we will Edit book feature.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Wilsan Fourspeed**
@@ -141,11 +155,6 @@ npx stylelint "**/*.{css,scss}"
 
 <p align="right">(<a href="#live-demo">back to top</a>)</p>
 
-## 🎥 Live Demo <a name="authors"></a>
-
--   Live Demo: [@LiveDemo](https://wils-fourr-speed.github.io/Awesome-Books/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🎥 Project Presentation
 
