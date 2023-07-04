@@ -33,6 +33,7 @@ function callbackFunction(event) {
 
 form.addEventListener('submit', callbackFunction);
 
+// eslint-disable-next-line no-unused-vars
 function removeBook(index) {
   books.splice(index, 1);
   const storedBook = JSON.stringify(books);
