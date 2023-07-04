@@ -1,23 +1,7 @@
-const bookstore = [];
+let books = [];
 let id = 0;
 
 const form = document.getElementById('form');
-form.addEventListener('submit', callbackFunction);
-
-function callbackFunction(event) {
-  event.preventDefault();
-  const myFormData = new FormData(event.target);
-  let formDataObj = {};
-  myFormData.forEach((value, key) => {
-    formDataObj[key] = value;
-  });
-  id += 1;
-  formDataObj = { ...formDataObj, id };
-  bookstore.push(formDataObj);
-  const storedBook = JSON.stringify(bookstore);
-  localStorage.setItem('books', storedBook);
-  displayData();
-}
 function displayData() {
   books = JSON.parse(localStorage.getItem('books'));
   const bookSection = document.getElementById('books');
@@ -32,12 +16,31 @@ function displayData() {
     bookSection.appendChild(bookElement);
   });
 }
+function callbackFunction(event) {
+  event.preventDefault();
+  const myFormData = new FormData(event.target);
+  let formDataObj = {};
+  myFormData.forEach((value, key) => {
+    formDataObj[key] = value;
+  });
+  id += 1;
+  formDataObj = { ...formDataObj, id };
+  books.push(formDataObj);
+  const storedBook = JSON.stringify(books);
+  localStorage.setItem('books', storedBook);
+  displayData();
+}
+
+form.addEventListener('submit', callbackFunction);
+
+// eslint-disable-next-line no-unused-vars
 function removeBook(index) {
   books.splice(index, 1);
   const storedBook = JSON.stringify(books);
   localStorage.setItem('books', storedBook);
   displayData();
 }
+
 window.onload = () => {
   displayData();
 };
