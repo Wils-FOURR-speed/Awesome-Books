@@ -43,7 +43,8 @@ function removeBook(index) {
 
 // eslint-disable-next-line consistent-return
 window.onload = () => {
-  if (!books) {
+  console.log(books);
+  if (!books || books.length === 0) {
     return 0;
   }
   displayData();
