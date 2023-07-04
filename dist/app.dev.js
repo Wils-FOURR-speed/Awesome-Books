@@ -46,13 +46,6 @@ function removeBook(index) {
   var storedBook = JSON.stringify(books);
   localStorage.setItem('books', storedBook);
   displayData();
-} // eslint-disable-next-line consistent-return
+}
 
-
-window.onload = function () {
-  if (!books || books.length === 0) {
-    return 0;
-  }
-
-  displayData();
-};
+displayData();

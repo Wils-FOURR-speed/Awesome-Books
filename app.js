@@ -41,10 +41,4 @@ function removeBook(index) {
   displayData();
 }
 
-// eslint-disable-next-line consistent-return
-window.onload = () => {
-  if (!books || books.length === 0) {
-    return 0;
-  }
-  displayData();
-};
+displayData();
