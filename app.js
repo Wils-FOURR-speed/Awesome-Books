@@ -5,7 +5,7 @@ const form = document.getElementById('form');
 function displayData() {
   books = JSON.parse(localStorage.getItem('books'));
   const bookSection = document.getElementById('books');
-  bookSection.innerHTML = ''; // Clear the existing content
+  bookSection.innerHTML = '' // Clear the existing content
   books.forEach((book, index) => {
     const bookElement = document.createElement('div');
     bookElement.innerHTML = `
@@ -16,6 +16,7 @@ function displayData() {
     bookSection.appendChild(bookElement);
   });
 }
+
 function callbackFunction(event) {
   event.preventDefault();
   const myFormData = new FormData(event.target);
@@ -33,7 +34,6 @@ function callbackFunction(event) {
 
 form.addEventListener('submit', callbackFunction);
 
-// eslint-disable-next-line no-unused-vars
 function removeBook(index) {
   books.splice(index, 1);
   const storedBook = JSON.stringify(books);
