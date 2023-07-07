@@ -22,12 +22,7 @@ class BookManager {
       const bookElement = document.createElement('div');
       bookElement.classList.add('book');
       bookElement.innerHTML = `
-<<<<<<< HEAD
-        <p id="title">${book.title}</p>
-        <p id="author">${book.author}</p>
-=======
         <p id="title">"${book.title}" by ${book.author}</p>
->>>>>>> e1ed0cc92873c29140a2332ee5b7828a22e9b366
         <button class='btn' onclick='bookManager.removeBook(${index})'>Remove</button>`;
       this.bookSection.appendChild(bookElement);
     });

@@ -38,33 +38,24 @@ body {
   }
 }
 
-#books div {
+#books {
   display: flex;
-  gap: 1rem;
-  border: 1px solid red;
-  padding: 1rem;
+  flex-direction: column;
+  border: 2px solid black;
+  width: 95vw;
+  margin-top: 6rem;
 
-  .hr {
-    width: 50%;
-    border-top: 4px solid rgb(41, 41, 41);
+  .book {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+
+    #title {
+      margin: 4px;
+    }
   }
 
-  #books {
-    border: 2px solid black;
-    width: inherit;
-
-    .book {
-      display: flex;
-      justify-content: space-between;
-      padding: 0.5rem;
-
-      #title {
-        margin: 4px;
-      }
-    }
-
-    .book:nth-child(even) {
-      background-color: #ddd;
-    }
+  .book:nth-child(even) {
+    background-color: #ddd;
   }
 }
