@@ -7,6 +7,40 @@ body {
   flex-direction: column;
   align-items: center;
   width: 99vw;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+#header {
+  display: flex;
+  position: fixed;
+  width: 95vw;
+  background-color: white;
+  justify-content: space-between;
+  border: 2px solid black;
+  padding: 0.3rem 0.2rem;
+  margin-bottom: 1rem;
+
+  .ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    cursor: pointer;
+    margin: 0;
+
+    .li {
+      border-right: 2px solid black;
+      color: black;
+      padding-right: 1rem;
+    }
+
+    .li:last-child {
+      border-right: none;
+    }
+  }
 }
 
 #createBook {
@@ -16,6 +50,7 @@ body {
   align-items: center;
   background-color: white;
   width: 50%;
+  margin-top: 5rem;
 
   #form {
     display: flex;
@@ -38,6 +73,11 @@ body {
   }
 }
 
+#hr {
+  width: 50%;
+  border-top: 4px solid rgb(41, 41, 41);
+}
+
 #books {
   display: flex;
   flex-direction: column;
@@ -58,4 +98,21 @@ body {
   .book:nth-child(even) {
     background-color: #ddd;
   }
+}
+
+#contactinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+#footer {
+  position: fixed;
+  bottom: 3px;
+  padding: 0.3rem;
+  border: 2px solid black;
+  background-color: #ddd;
+  width: 95vw;
 }
