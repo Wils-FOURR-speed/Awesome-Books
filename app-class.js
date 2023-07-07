@@ -4,11 +4,45 @@ class BookManager {
     this.id = 0;
     this.form = document.getElementById('form');
     this.bookSection = document.getElementById('books');
-
+    this.list = document.getElementById('list');
+    this.addNew = document.getElementById('addnew');
+    this.contact = document.getElementById('contact');
     this.initialize();
   }
 
+  displayList() {
+    this.bookSection = document.getElementById('books');
+    this.createBook = document.getElementById('createBook');
+    this.contactInfo = document.getElementById('contactinfo');
+    this.createBook.style.display = 'none';
+    this.bookSection.style.display = 'flex';
+    this.contactInfo.style.display = 'none';
+  }
+
+  displayForm() {
+    this.bookSection = document.getElementById('books');
+    this.createBook = document.getElementById('createBook');
+    this.contactInfo = document.getElementById('contactinfo');
+    this.hr = document.getElementById('hr');
+    this.createBook.style.display = 'flex';
+    this.bookSection.style.display = 'none';
+    this.contactInfo.style.display = 'none';
+    this.hr.style.display = 'none';
+  }
+
+  displayContact() {
+    this.bookSection = document.getElementById('books');
+    this.createBook = document.getElementById('createBook');
+    this.contactInfo = document.getElementById('contactinfo');
+    this.contactInfo.style.display = 'flex';
+    this.createBook.style.display = 'none';
+    this.bookSection.style.display = 'none';
+  }
+
   initialize() {
+    this.list.addEventListener('click', this.displayList);
+    this.addNew.addEventListener('click', this.displayForm);
+    this.contact.addEventListener('click', this.displayContact);
     this.form.addEventListener('submit', this.callbackFunction.bind(this));
     this.displayData();
   }
