@@ -11,29 +11,47 @@ class BookManager {
   }
 
   displayList() {
+    this.list = document.getElementById('list');
+    this.addNew = document.getElementById('addnew');
+    this.contact = document.getElementById('contact');
     this.bookSection = document.getElementById('books');
     this.createBook = document.getElementById('createBook');
     this.contactInfo = document.getElementById('contactinfo');
     this.createBook.style.display = 'none';
     this.bookSection.style.display = 'flex';
+    this.contact.style.color = 'black';
+    this.addNew.style.color = 'black';
+    this.list.style.color = 'blue';
     this.contactInfo.style.display = 'none';
   }
 
   displayForm() {
+    this.list = document.getElementById('list');
+    this.addNew = document.getElementById('addnew');
+    this.contact = document.getElementById('contact');
     this.bookSection = document.getElementById('books');
     this.createBook = document.getElementById('createBook');
     this.contactInfo = document.getElementById('contactinfo');
     this.hr = document.getElementById('hr');
     this.createBook.style.display = 'flex';
+    this.contact.style.color = 'black';
+    this.addNew.style.color = 'blue';
+    this.list.style.color = 'black';
     this.bookSection.style.display = 'none';
     this.contactInfo.style.display = 'none';
     this.hr.style.display = 'none';
   }
 
   displayContact() {
+    this.list = document.getElementById('list');
+    this.addNew = document.getElementById('addnew');
+    this.contact = document.getElementById('contact');
     this.bookSection = document.getElementById('books');
     this.createBook = document.getElementById('createBook');
     this.contactInfo = document.getElementById('contactinfo');
+    this.contact.style.color = 'blue';
+    this.addNew.style.color = 'black';
+    this.list.style.color = 'black';
     this.contactInfo.style.display = 'flex';
     this.createBook.style.display = 'none';
     this.bookSection.style.display = 'none';

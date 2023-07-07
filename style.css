@@ -33,6 +33,7 @@ ul {
 
     .li {
       border-right: 2px solid black;
+      color: black;
       padding-right: 1rem;
     }
 
