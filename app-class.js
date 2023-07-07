@@ -20,11 +20,10 @@ class BookManager {
 
     this.books.forEach((book, index) => {
       const bookElement = document.createElement('div');
+      bookElement.classList.add('book');
       bookElement.innerHTML = `
-        <p id="title">${book.title}</p>
-        <p id="author">${book.author}</p>
-        <button class='btn' onclick='bookManager.removeBook(${index})'>Remove</button>
-        <hr />`;
+        <p id="title">"${book.title}" by ${book.author}</p>
+        <button class='btn' onclick='bookManager.removeBook(${index})'>Remove</button>`;
       this.bookSection.appendChild(bookElement);
     });
   }

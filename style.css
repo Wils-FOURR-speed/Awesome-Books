@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 #createBook {
   width: fit-content;
   bottom: 0;
@@ -12,5 +16,23 @@
     .btn {
       width: fit-content;
     }
+  }
+}
+
+#books {
+  border: 2px solid black;
+
+  .book {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+
+    #title {
+      margin: 4px;
+    }
+  }
+
+  .book:nth-child(even) {
+    background-color: #dddddd;
   }
 }

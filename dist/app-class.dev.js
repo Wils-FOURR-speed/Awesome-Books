@@ -41,7 +41,8 @@ function () {
       this.bookSection.innerHTML = '';
       this.books.forEach(function (book, index) {
         var bookElement = document.createElement('div');
-        bookElement.innerHTML = "\n        <p id=\"title\">".concat(book.title, "</p>\n        <p id=\"author\">").concat(book.author, "</p>\n        <button class='btn' onclick='bookManager.removeBook(").concat(index, ")'>Remove</button>\n        <hr />");
+        bookElement.classList.add('book');
+        bookElement.innerHTML = "\n        <p id=\"title\">\"".concat(book.title, "\" by ").concat(book.author, "</p>\n        <button class='btn' onclick='bookManager.removeBook(").concat(index, ")'>Remove</button>");
 
         _this.bookSection.appendChild(bookElement);
       });
