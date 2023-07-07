@@ -27,8 +27,8 @@ function callbackFunction(event) {
   id += 1;
   formDataObj = { ...formDataObj, id };
   books.push(formDataObj);
-  const storedBook = JSON.stringify(books);
-  localStorage.setItem('books', storedBook);
+  const storedBooks = JSON.stringify(books);
+  localStorage.setItem('books', storedBooks);
   displayData();
 }
 
@@ -36,8 +36,8 @@ form.addEventListener('submit', callbackFunction);
 
 function removeBook(index) {
   books.splice(index, 1);
-  const storedBook = JSON.stringify(books);
-  localStorage.setItem('books', storedBook);
+  const storedBooks = JSON.stringify(books);
+  localStorage.setItem('books', storedBooks);
   displayData();
 }
 
