@@ -6,7 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  width: 99vw;
 }
 
 #createBook {
@@ -50,6 +50,6 @@ body {
   }
 
   .book:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #ddd;
   }
 }
