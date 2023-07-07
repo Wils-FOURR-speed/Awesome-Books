@@ -5,7 +5,7 @@ const form = document.getElementById('form');
 function displayData() {
   books = JSON.parse(localStorage.getItem('books'));
   const bookSection = document.getElementById('books');
-  bookSection.innerHTML = '' // Clear the existing content
+  bookSection.innerHTML = ''; // Clear the existing content
   books.forEach((book, index) => {
     const bookElement = document.createElement('div');
     bookElement.innerHTML = `

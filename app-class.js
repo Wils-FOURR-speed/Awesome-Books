@@ -23,8 +23,7 @@ class BookManager {
       bookElement.innerHTML = `
         <p id="title">${book.title}</p>
         <p id="author">${book.author}</p>
-        <button class='btn' onclick='bookManager.removeBook(${index})'>Remove</button>
-        <hr />`;
+        <button class='btn' onclick='bookManager.removeBook(${index})'>Remove</button>`;
       this.bookSection.appendChild(bookElement);
     });
   }
