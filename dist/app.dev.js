@@ -39,7 +39,7 @@ function callbackFunction(event) {
   displayData();
 }
 
-form.addEventListener('submit', callbackFunction); // eslint-disable-next-line no-unused-vars
+form.addEventListener('submit', callbackFunction);
 
 function removeBook(index) {
   books.splice(index, 1);
